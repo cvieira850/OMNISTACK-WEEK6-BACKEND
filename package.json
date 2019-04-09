@@ -1,0 +1,18 @@
+{
+  "name": "OMNISTACK-WEEK6-BACKEND",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cvieira850/OMNISTACK-WEEK6-BACKEND.git",
+  "author": "caio vieira <caiodmvieiragithub@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
