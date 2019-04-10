@@ -33,7 +33,7 @@ mongoose.connect(
 app.use((req, res, next) => {
   req.io = io;
 
-  return next;
+  return next();
 });
 
 app.use(express.json());
