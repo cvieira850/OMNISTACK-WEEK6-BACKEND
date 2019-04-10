@@ -1,8 +1,18 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
+const cors = require("cors");
 
 const app = express();
+
+/*  Usado para determinar quem pode acessar a aplicação.
+ *  Nesse caso liberei o acesso a todos, mas é possível
+ *  limitar isso a determinados usuários.
+ *  Senão for definido esse módulo o frontend não consegue
+ *  Acessar esse módulo estando em um domínio diferente.
+ */
+
+app.use(cors());
 
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
