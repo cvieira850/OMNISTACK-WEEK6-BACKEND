@@ -1,6 +1,6 @@
 const Box = require("../models/Box");
 
-class BoxCOntroller {
+class BoxController {
   async store(req, res) {
     const box = await Box.create(req.body);
 
@@ -8,4 +8,4 @@ class BoxCOntroller {
   }
 }
 
-module.exports = new BoxCOntroller();
+module.exports = new BoxController();
